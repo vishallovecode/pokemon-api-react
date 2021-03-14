@@ -1,0 +1,111 @@
+.pokedex-name-container {
+    margin: auto;
+    border-bottom: 1px solid #dcdcdc;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+ 
+  .pokedex-name {
+      font-weight: 500;
+      font-size: 20px;
+      color: #3c3c3c;
+      margin: auto;
+      font-family: 'Roboto';
+      pointer-events: none;
+  }
+
+  .pokedex-card {
+    width: 200px;
+    position: relative;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 3px 3px 15px #dcdcdc;
+    background-color: #fff;
+    height: 170px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .pokedex-card :hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .pokedex-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: flex-start;
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+
+  .pokedex-card-details {
+    position: relative;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px #dcdcdc;
+    background-color: #fff;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #d2d7de;
+    padding: 10px;
+    max-width: 500px;
+    margin: auto;
+    .pokedex-name-container {
+      margin: unset  !important;
+    }
+ 
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.title-values {
+  color:#ababc1;
+  margin-left:10px;
+  max-height: 100px;
+}
+.title {
+  font-weight: 600;
+}
+ 
+.d-flex {
+  display: flex;
+  margin-top: 10px;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .pokedex-card-container{
+    margin-bottom: 60px;
+    margin-left: 50px;
+   } 
+ .pokedex-card {
+   width: 130px;
+   margin: 10px;
+   height:100px
+ } 
+ img {
+   height: 80px;
+   width: 80px;
+   margin: auto;
+ }
+}

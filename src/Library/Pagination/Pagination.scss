@@ -1,0 +1,149 @@
+.div-btn-group  {
+
+  
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0  !important;
+   margin-right: 40px !important;
+  
+  }
+  
+  .btn-group button{
+
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    background-color: white;
+
+  }
+  .btn-group button:not(:last-child) {
+    border: none; /* Prevent double borders */
+  }
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .btn-group button:active {
+    border-radius: 50%;
+    // background-color: black;
+    width: 25px;
+    height: 25px;
+    color: white;
+    border: none;
+    outline: none;
+  }
+  .auto-cursor
+  {
+    cursor:auto !important;
+  }
+  .ActiveButton
+  {
+    border-radius: 50%;
+    background-color: black  !important;
+    width: 25px;
+    height: 25px;
+    color: white;
+   font-size: 13px;
+   padding: 2px;
+    border: none;
+    cursor: auto;
+  }
+
+.pagination
+{
+display: flex;
+margin-top: 10px;
+margin-bottom: 10px;
+flex-direction: row-reverse;
+margin-bottom: 10px;
+
+}
+
+.right-toggle
+{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: solid 0px black;
+  border-radius: 0;
+  cursor: pointer;
+
+}
+
+.right-toggle-disabled:after {
+  content: '';
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 8px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 2px #a4aab3;
+    border-right: solid 2px #a4aab3;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+}
+.right-toggle:after {
+    content: '';
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 10px;
+    height: 10px;
+    border-top: solid 2px black;
+    border-right: solid 2px black;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+  }
+
+  .toogle-disabled
+ {
+  border-top:solid 2px #a4aab3 !important;
+  border-right:solid 2px #a4aab3 !important;
+ }
+
+
+
+.left-toggle
+{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: solid 0px black !important;
+  border-radius: 0;
+  cursor: pointer;
+
+}
+
+.left-toggle:after {
+  content: '';
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 8px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 2px black;
+  border-right: solid 2px black;
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  
+}
+
+
+.left-toggle-disabled
+{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: solid 0px black !important;
+  border-radius: 0;
+  cursor: pointer;
+
+}
+.btn-group button:focus {outline:0;} 
